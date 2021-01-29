@@ -60,6 +60,7 @@ jobs:
       with:
         name: resultado-execucao-testes.html
         path: ${{ env.CAMINHO_RELATORIO_ERROS }}
+        retention-days: 30
 
   deployment-azwebapp:
     needs: [build-docker-tests-push-acr]
